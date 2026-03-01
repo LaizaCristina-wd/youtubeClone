@@ -7,15 +7,243 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="scop-bar">
-    <figure class="sub-scop"></figure>
-    <nav class="menu"></nav>
+  <header class="title-bar">
+    <button class="menu">
+      <img src="/img/burger-bar.png" alt="menu">
+    </button>
+    <h1 class="section-title">
+      <img src="/img/youtube.png" alt="" aria-hidden="true">
+      <span>Youtube</span></h1>
+
+    <form class="search-aria">
+      <label for="search" class="visually-hidden">
+      </label>
+      <div class="input-wrapper">
+        <input 
+        type="search"
+        id="search"
+        name="q"
+        placeholder=""
+        <button type="submit" class="search-btn" aria-label="buscar">
+          <img src="/img/loupe.png" width="18" height="18">
+        </button>
+      </div>
+    </form>
+
+    <button class="microphone">
+      <img src="/img/microphone.png">
+    </button>
+    <button class="create">
+      <img src="/img/video.png">
+    </button>
+    <button class="more-apps">
+      <img src="/img/grid.png">
+    </button>
+    <button class="notifications">
+      <img src="/img/notifications.png">
+    </button>
+    <button class="profile">
+      <img src="/img/user.png">
+    </button>
   </header>
+  <figure class="below-title">
+    <img src="/img/capa.png" alt="Imagem do canal culinaria facil">
+  </figure>
+
+  <nav class="left-back">
+    <button class="btn">
+      <img src="/img/home.png">
+      <span>Home</span></button>
+    <button class="btn">
+      <img src="/img/icons8-youtube-shorts-24.png">
+      <span>Shorts</span></button>
+    <button class="btn">
+      <img src="/img/youtubesub.png">
+      <span>Subscritption</span></button>
+    <button class="btn">
+      <img src="/img/library.png">
+      <span>Library</span></button>
+  </nav>
+
   <main class="video-container">
-    <section class="channel-name"></section>
-    <section class="home-bar"></section>
-    <section class="videos-list"></section>
-    <section class="videos-list"></section>
+    <section class="channel-name">
+      <figure>
+        <img src="/img/fotoDePerfil.png" alt="foto de perfil canal de culinaria">
+      <h2>Culinária facil</h2>
+      <img src="/img/check.png">
+      </figure>
+      <p>5.5 subscribers</p>
+      <button class="subscribe">Subscribe</button>
+    </section>
+    <section class="home-bar">
+      <ul>
+        <li>HOME</li>
+        <li>VIDEOS</li>
+        <li>PLAYLISTS</li>
+        <li>COMMUNITY</li>
+        <li>STORE</li>
+        <li>CHANNELS</li>
+        <li>ABOUT</li>
+      </ul>
+      <img src="/img/loupe.png" width="18">
+    </section>
+    <article class="featured-video">
+      <a href="#" class="video-thumb">
+      <img src="/img/featured.png" alt="imagem do video da receita de lasanha">
+      </a>
+      <div class="video-info">
+        <h3>Receita facil de lasanha de frango</h3>
+        <p>12,265,456 views . 1 week ago</p>
+      </div>
+      <p>
+       Confira agora o passo a passo dessa receita facil e rápida - <br>
+       &#10084;&#65039; Gostou do video deixe seu like e ative o sininho!
+      </p>
+     <details>
+      <summary>Obrigada por se inscrever!
+       <a href="#">Lista de ingredientes</a>
+         </summary>
+       <a href="#">Receita completa em PDF</a>
+     </details>
+    </article>
+
+    <section class="newest-videos">
+      <header class="title-newest">
+        <h3>For you</h3>
+        <button class="play-all-btn">
+      ▶ Play all
+    </button>
+      </header>
+      <article class="video-card">
+        <figure>
+          <img src="/img/pascoa.png" alt="ovos de chocolate de pascoa">
+        </figure>
+        <div class="video-info">
+          <h3>Receitas fáceis de Pascoa</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">12 mil visualizações . há 2 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/receita.png" alt="imagem de queijo derretido em panela">
+        </figure>
+        <div class="video-info">
+          <h3>Especial 3 anos do canal</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">88 mil visualizações . há 3 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/bolo.png" alt="bolo de chocolate com cobertura">
+        </figure>
+        <div class="video-info">
+          <h3>Bolo de chocolate cremoso</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">22 mil visualizações . há 7 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/carne.png" alt="imagem de carne assada">
+        </figure>
+        <div class="video-info">
+          <h3>Carne assada suculenta e no ponto</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">52 mil visualizações . há 10 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/fitness.png" alt="saladas de alface com carne">
+        </figure>
+        <div class="video-info">
+          <h3>Salada fit e proteína</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">10 mil visualizações . há 12 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/hamburguer.png" alt="hamburguers com pão e queijo">
+        </figure>
+        <div class="video-info">
+          <h3>Receita de lanche para familia</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">60 mil visualizações . há 8 dias</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="popular-videos">
+       <header class="title-newest">
+        <h3>Most popular</h3>
+        <button class="play-all-btn">
+      ▶ Play all
+    </button>
+      </header>
+      <article class="video-card">
+        <figure>
+          <img src="/img/hotdog.png" alt="pão com salsicha e molho">
+        </figure>
+        <div class="video-info">
+          <h3>Receita fácil de "Dogão"</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">35 mil visualizações . há 15 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/jantar.png" alt="comidas e panelas na mesa">
+        </figure>
+        <div class="video-info">
+          <h3>Um jantar rápido e completo</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">38 mil visualizações . há 16 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/macarrao.png" alt="um prato com macarrão">
+        </figure>
+        <div class="video-info">
+          <h3>Macarronada com poucos ingredientes</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">52 mil visualizações . há 17 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/paocaseiro.png" alt="imagem de pão caseiro">
+        </figure>
+        <div class="video-info">
+          <h3>Pão caseiro</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">82 mil visualizações . há 19 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/pastel.png" alt="pasteis com uma cozinheira">
+        </figure>
+        <div class="video-info">
+          <h3>Receita de pastel de feira</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">90 mil visualizações . há 21 dias</p>
+        </div>
+      </article>
+      <article class="video-card">
+        <figure>
+          <img src="/img/pizza.png" alt="pizza com queijo e peperone">
+        </figure>
+        <div class="video-info">
+          <h3>Receita de pizza direto da Itália</h3>
+          <p class="channel-name">Culinária Fácil</p>
+          <p class="views">60 mil visualizações . há 23 dias</p>
+        </div>
+      </article>
+    </section>
    
   </main>
   <script src="app.js"></script>
