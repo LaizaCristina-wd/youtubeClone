@@ -99,7 +99,14 @@ body{
     display: none;
   }
 }
-
+.icon-desktop{
+  display: none;
+}
+@media (min-width:768px) {
+  .icon-desktop{
+    display: flex;
+  }
+}
 
 .section-title{
   display: flex;
@@ -130,9 +137,7 @@ body{
 
 
 .left-back{
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
+
   gap:10px;
   padding: 10px;
 }
@@ -156,4 +161,118 @@ body{
 }
 .btn:hover{
   background-color: #222;
+}
+.below-title img{
+  width: 100%;
+  height:20em;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.channel-name{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.channel-info{
+  display:flex;
+  flex-direction: column;
+}
+
+.channel-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.space-image-title{
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.foto-perfil{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.check{
+  width: 16px;
+  height: 16px;
+}
+.subscribers{
+  font-size: 14px;
+  color:gray;
+}
+.subscribe{
+  padding: 8px 16px;
+  border:none;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+.home-bar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  
+}
+.home-bar li{
+  display:inline;
+  margin-right: 30px;
+  list-style: none;
+ 
+}
+.thumb{
+  border-radius: 8px;
+  width: 20em;
+  
+}
+h3{
+  font-size: 23px;
+}
+h4{
+  font-size: 19px;
+}
+.featured-video{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  line-height: 1.6
+}
+.featured-video summary, a{
+  padding:2px;
+  cursor:pointer;
+}
+.video-info h3{
+  line-height: 1;
+  font-weight: bold;
+  font-size:23px ;
+}
+.video-info .views-featured{
+  color:grey;
+  font-size: 14px;
+  line-height: 4em;
+}
+
+.title-newest{
+  display: flex;
+  gap: 10em;
+  padding:30px;
+}
+.play-all-btn{
+  background: black;
+  color:grey;
+  border:none
+}
+.box-videos{
+  display: flex;
+  flex-direction: row;
+  padding:20px;
+  gap:30px;
+  flex-wrap:wrap;
 }
