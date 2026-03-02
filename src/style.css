@@ -1,0 +1,159 @@
+*{
+  margin:0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color:white;
+}
+.menu {
+  width: 40px;
+  height:40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background: none;
+  border: none;
+  padding: 9px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menu:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.live-mobile{
+  display: flex;
+}
+@media (min-width: 769px) {
+  .live-mobile {
+    display: none;
+  }
+}
+.input-wrapper input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+
+  padding: 10px 16px;
+  color: white;
+  font-size: 16px;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #303030;
+  border-radius: 40px;
+  overflow: hidden;
+
+  background: #121212;
+}
+
+.search-btn {
+  background: #222;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px solid #303030;
+}
+.search-btn:hover {
+  background: #333;
+}
+
+.search-aria {
+
+  width: 100%;
+  max-width: 600px;
+}
+@media (max-width: 768px) {
+  .input-wrapper {
+    width:auto;
+  }
+  .search-aria input{
+    display: none;
+  }
+
+  .search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+}
+
+
+.more-mobile{
+  display: flex;
+}
+@media (min-width: 769px) {
+  .more-mobile{
+    display: none;
+  }
+}
+
+
+.section-title{
+  display: flex;
+  flex-direction: row;
+}
+.section-title img{
+  width:50%;
+  height:40px;
+}
+.title-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  width: 100%;
+}
+.title-bar button{
+  background:black;
+  border:none;
+}
+
+.icon{
+  width: 24px;
+  height:24px;
+  background: transparent;
+  filter:invert(1)
+}
+
+
+.left-back{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:10px;
+  padding: 10px;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border:none;
+  align-items: center;
+  gap:10px;
+
+  background: transparent;
+  cursor: pointer;
+  color:white
+}
+.btn img{
+  width: 24px;
+  height:24px;
+  filter:invert(1);
+}
+.btn:hover{
+  background-color: #222;
+}
