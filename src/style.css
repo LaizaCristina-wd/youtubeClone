@@ -46,10 +46,11 @@ body{
  display: flex;
  flex-direction: column;
  gap:30px;
- padding:20px;
+ padding-top:20px;
 }
 footer{
   grid-area: footer;
+
 }
 
 @media(max-width:768px){
@@ -57,6 +58,7 @@ footer{
     display: flex;
     width: 100%;
     flex-direction: row;
+    margin-top: 13em;
   }
   body{
     grid-template-columns: 1fr;
@@ -73,6 +75,7 @@ footer{
   }
   footer{
     display:none;
+   
   }
 }
 .menu {
@@ -269,7 +272,10 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
+  padding-top: 10em;
+}
+.description{
+  display:none;
 }
 @media(max-width:768px){
   .name-channel{
@@ -278,9 +284,15 @@ footer{
     flex-direction: column;
     width:100%;
     align-items: center;
+    padding-top: 0;
+    gap:10px;
     
   }
-  .name-channel .subscribe{
+  .subscribe{
+    width:100%;
+  }
+  .description{
+    display: flex;
     width:100%;
   }
 }
