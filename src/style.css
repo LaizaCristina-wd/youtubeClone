@@ -345,7 +345,7 @@ footer{
 }
 .subscribers{
   font-size: 14px;
-  color:gray;
+  color:grey;
 }
 .subscribe{
   padding: 8px 16px;
@@ -366,7 +366,7 @@ footer{
   justify-content: space-between;
   padding: 20px;
   width:100%;
-  
+
   }
   .home-bar-mobile button{
   color:white;
@@ -452,7 +452,9 @@ h4{
   gap:30px;
   flex-wrap:wrap;
 }
-.video-info p{
-  color:grey;
+.name-below{
+  color:grey
 }
-
+.views{
+  color: grey;
+}
