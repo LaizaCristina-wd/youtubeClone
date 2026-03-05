@@ -5,10 +5,11 @@
 body{
   font-family: 'Roboto', sans-serif;
   background-color: black;
+  margin-right: 1%;
   color:white;
   display:grid;
   height:100vh;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 150px 1fr;
   grid-template-rows: 60px auto 1fr 60px;
   grid-template-areas: 
   "header header"
@@ -24,7 +25,7 @@ body{
 }
 .banner-section img{
   width: 100%;
-  height: 150px;
+  height: 155px;
   object-fit: cover;
 }
 @media(max-width:768px){
@@ -48,10 +49,15 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:20px;
+  gap:60px;
+  margin-left: 10px;
   padding-top: 20px;
-  width:90px;
- 
+  width: 80px;
+
+}
+.left-back button{
+ padding:10px;
+ border-radius: 5px
 }
 .video-container{
  grid-area: main;
@@ -77,6 +83,7 @@ footer{
     background-color: black;
     z-index: 1000;
     justify-content: center;
+    margin-right:5px;
   }
   body{
     grid-template-columns: 1fr;
@@ -113,13 +120,23 @@ footer{
 .menu:hover {
   background: rgba(255, 255, 255, 0.26);
 }
+.mobile-aria{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.live-mobile{
+  justify-content: end;
+}
+
 .mobile-title{
   display: none;
 }
 @media(max-width: 768px){
  .mobile-title{
-  display:inline-flex;
-
+  display:flex;
+  position:relative;
  }
 }
 .live-mobile{
@@ -128,6 +145,7 @@ footer{
 @media (min-width: 769px) {
   .live-mobile {
     display: none;
+
     
   }
 }
@@ -210,8 +228,6 @@ footer{
     display: none;
   }
 }
-
-
 .title-bar button{
   background:black;
   border:none;
@@ -234,6 +250,19 @@ footer{
   height:24px;
   background: transparent;
   filter:invert(1)
+}
+.icon-desktop{
+  margin-right: 20px;
+}
+.microphone .icon-desktop{
+  background-color:#303030;
+  padding:20px;
+  border-radius: 50%;
+}
+.microphone:hover{
+background-color: #333;
+ padding:8px;
+  border-radius: 50%;
 }
 .btn-plus{
   display:none;
@@ -308,9 +337,14 @@ footer{
     gap:10px;
     
   }
+  .space-image-title{
+    display: flex;
+    flex-direction: column;
+  }
   .subscribe{
     width:100%;
     margin-left: 15px;
+    margin-right: 15px;
   }
   .description{
     display: flex;
@@ -395,6 +429,7 @@ footer{
   background: none;
   border:none;
 }
+
 @media(max-width:768px){
   .home-bar{
     display:none;

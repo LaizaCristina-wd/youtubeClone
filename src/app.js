@@ -1,5 +1,5 @@
-const btn = document.querySelector(".search-btn")
-const input = document.querySelector(".search-input")
+const btn = document.querySelector(".search-btn");
+const input = document.querySelector(".search-input");
 
 btn.addEventListener("click", () => {
   input.classList.toggle("active")
