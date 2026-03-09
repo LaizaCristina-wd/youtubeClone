@@ -27,15 +27,15 @@ buttonToggle.addEventListener("click", () => {
    document.body.style.backgroundColor =  "rgb(8, 8, 8)" 
 });
 
-const moreBottom = document.querySelector(".more-mobile");
-const menuBottom = document.querySelector(".box-more");
+const moreButtom = document.querySelector(".more-mobile");
+const menuCard = document.querySelector(".toggle-more");
 
-moreBottom.addEventListener("click", () => {
- menuBottom.classList.toggle("active")
- moreBottom.classList.toggle("active")
+ moreButtom.addEventListener("click", () => {
+ moreButtom.classList.toggle("active")
+ menuCard.classList.toggle("active")
  
 });
-moreBottom.addEventListener("click", () => {
- menuBottom.classList.remove("active")
- moreBottom.classList.remove("active")
+moreButtom.addEventListener("click", () => {
+ moreButtom.classList.remove("active")
+ menuCard.classList.remove("active")
 });
