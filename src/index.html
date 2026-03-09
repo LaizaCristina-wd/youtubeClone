@@ -6,6 +6,7 @@
   <title>Youtube</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="/img/youtube.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -27,9 +28,93 @@
       <span>Library</span></button>
   </nav>
   <header class="title-bar">
-    <button class="desktop menu">
-      <img class="icon desktop" src="/img/burger-bar.png" alt="menu">
+    <button id="button-change" class="desktop menu">
+      <i class="fa-solid fa-bars"></i>
     </button>
+    <nav class="menu-toggle">
+      <ul>
+        <li><a href="#">
+          <i class="fa-solid fa-house"></i>
+          Home</a></li>
+        <li><a href="#">
+          <i class="fa-regular fa-circle-play"></i>
+          Shorts</a></li>
+        </ul>
+        <ul class="subscription">
+         <li class="subs-title">Subscriptions</li>
+         <li class="subscribed-channel"><a><img src="/img/fotoDePerfil.png">Cozinha Fácil</a></li>
+        </ul>
+          <ul>
+        <li class="subs-title">You</li>
+
+        <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i>
+           History</a></li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-list"></i>Playlists</a></li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-clock"></i> Watch later</a></li>
+        <li>
+          <a href="#"><i class="fa-regular fa-thumbs-up"></i>
+            Liked videos</a></li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-square-youtube"></i>
+              Your videos</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-arrow-down"></i>
+            Downloads</a></li>
+          </ul>
+          <ul>
+        <li class="subs-title">Explore</li>
+        <li>
+          <a href="#"><i class="fa-regular fa-headphones"></i>Music</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-tv"></i>
+            Movies</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-tower-broadcast">
+          </i>Live</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-angle-down"></i>
+            Show more</a></li>
+            <ul>
+        <li class="subs-title">More from youtube</li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>Youtube Premium</a></li>
+         <li>
+          <a href="#"><i class="fa-brands fa-youtube"></i>
+            Youtube Studio</a></li>
+         <li>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>Youtube Music</a></li>
+         <li>
+          <a href="#">
+            <i class="fa-brands fa-youtube"></i>Youtube Kids</a></li>
+          </ul>
+          <ul>
+         <li>
+          <a><i class="fa-solid fa-gear"></i>Settings
+          </a></li>
+         <li>
+          <a href="#"><i class="fa-regular fa-flag"></i>Report history
+          </a></li>
+         <li>
+          <a href="#"><i class="fa-solid fa-question"></i>Help
+          </a></li>
+         <li>
+          <a href="#"><i class="fa-solid fa-circle-exclamation"></i>
+          Send feedback</a></li>
+            </ul>
+            <footer class="nav-footer">
+               <p>About Press Copyright</p>
+                <p>Contact us Creators</p>
+               &copy;2026
+            </footer>
+    </nav>
+    <div class="background"></div>
     <h1 class="desktop youtube"><img src="/img/youtube.png" alt="" aria-hidden="true">
       <span>Youtube</span></h1>
    
@@ -51,9 +136,21 @@
             <button type="button" class="search-btn mobile-aria" aria-label="buscar">
               <img  class="icon" src="/img/loupe.png" width="18" height="18">
             </button>
-            <button>
-              <img class="more-mobile icon mobile-aria" src="/img/dots.png">
+            
+            <button class="more-mobile mobile-aria">
+              <img class="icon" src="/img/dots.png">
             </button>
+            <ul class="box-more">
+              <li><a href="#"><i class="fa-solid fa-share"></i>
+                Share</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>
+                About channel</a></li>
+              <li><a href="#"><i class="fa-solid fa-lock"></i>
+                Hide user from my channel</a></li>
+              <li><a href="#"><i class="fa-regular fa-flag"></i>
+                Report user</a></li>
+              <li><a href="#"><i class="fa-solid fa-question"></i>Help & feedback</a></li>
+            </ul>
           </div>
         </form>
 
