@@ -333,20 +333,31 @@ background-color:var(--second-color);
   font-size: 14px;
   color:var(--info-color);
 }
+/*.subscribe-button{
+  background-color: #ff0000;
+  color: var(--text-color, #fff);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+}*/
+
 .subscribe-button{
   padding: 8px 16px;
   border:none;
-  border-radius: 20px;
+  border-radius: 999px;
   cursor:pointer;
 }
 .subscribe-button:hover{
  background: rgb(182, 180, 180);
 }
-
+.subscribe-button.subscribed{
+  background-color: #ff0000;
+  color: var(--primary-color,#000)
+}
 .home-bar-mobile{
   display: none;
 }
-
 .home-bar{
   display: flex;
   display:inline;
