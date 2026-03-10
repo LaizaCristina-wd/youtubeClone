@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="icon" href="/img/youtube.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" type="text">
 </head>
 <body>
   <!--Barra de navegação lateral, versão mobile-->
@@ -137,7 +137,7 @@
     <!--Barra padrão do youtube desktop-->
     <h1 class="desktop youtube"><img src="/img/youtube.png" alt="" aria-hidden="true">
       <span>Youtube</span></h1>
-   
+     <!--Área que agrupa o nome do canal, live tv, search e os 3 pontos-->
       <h2 class="mobile-title"><span>Cozinha Fácil</span></h2>
       <div class="mobile-aria">
         <button class="live-mobile" aria-label="transmition">
@@ -179,12 +179,13 @@
       <img  class="icon desktop"  src="/img/user.png">
     </button>
   </header>
-
-  <section class="banner-section"> 
+<!--Seção de banner do canal, não consegui colocar no header-->
+   <section class="banner-section"> 
     <figure>
     <img src="/img/capa2.png" alt="Imagem do canal cozinha facil">
    </figure>
     </section>
+    <!--Seção dos videos e respectivas descrições-->
    <main class="video-container">
     <section class="name-channel">
       <div class="space-image-title">
@@ -199,8 +200,9 @@
         <p class="subscribers">5.5 subscribers</p>
       </div>
       </div>
+      <!--descrição que aparece só no mobile-->
       <p class="description">Acompanhe o nosso canal com dicas e receitas fáceis para você, estamos sempre atualizando novos videos toda semana &#10084;&#65039;</p>
-        <button class="subscribe">Subscribe</button>
+        <button class="subscribe-button">Subscribe</button>
     </section>
 
     <section class="home-bar">
@@ -213,7 +215,7 @@
       <button><span>ABOUT</span></button>
 
       <img class="icon" src="/img/loupe.png">
-     </section>
+    </section>
 
      <section class="home-bar-mobile">
       <button><span>HOME</span></button>
@@ -221,14 +223,14 @@
       <button><span>SHORTS</span></button>
       <button><span>LIVE</span></button>
       <button><span>PLAYLISTS</span></button>
-    </section>
-
+     </section>
+     <!--Destaque com o video clicável-->
     <article class="featured-video">
-      <a href="https://www.youtube.com/watch?v=nG0GnTu7vFs" class="video-card" target="_blank">
+      <a href="https://www.youtube.com/watch?v=nG0GnTu7vFs" type="video" class="video-card" target="_blank">
       <img class="thumb" src="/img/featured.png" alt="imagem do video da receita de lasanha">
-      <h3>Receita de lasanha de frango</h3>
       </a>
       <div class="video-info">
+        <h3>Receita de lasanha</h3>
         <p class="views-featured">12,265,456 views . 1 week ago</p>
         <p class="text-featured">
           Confira agora o passo a passo dessa receita fácil e rápida - <br>
@@ -242,16 +244,16 @@
         </details>
       </div>
     </article>
-
+    <!--Seção com header para titulo, e videos agrupados dentro da div para definir display e wrap -->
     <section class="newest-videos">
       <header class="title-newest">
         <h3>For you</h3>
-        <button class="play-all-btn">
+       <button class="play-all-btn">
       ▶ Play all
-    </button>
+       </button>
       </header>
-      <div class="box-videos">
 
+      <div class="box-videos">
         <article class="video-card">
           <figure>
             <img  class="thumb" src="/img/pascoa.png" alt="ovos de chocolate de pascoa">
@@ -326,7 +328,7 @@
         </article>
       </div>
     </section>
-
+    <!--outra seção com header e div com videos-->
     <section class="popular-videos">
        <header class="title-newest">
         <h3>Most popular</h3>
@@ -334,8 +336,8 @@
       ▶ Play all
     </button>
       </header>
-      <div class="box-videos">
 
+      <div class="box-videos">
         <article class="video-card">
           <figure>
             <img  class="thumb" src="/img/hotdog.png" alt="pão com salsicha e molho">
