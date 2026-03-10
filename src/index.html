@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <link rel="icon" href="/img/youtube.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!--Barra de navegação lateral, versão mobile-->
   <nav class="left-back">
     <button class="btn">
       <img src="/img/home.png">
@@ -26,7 +28,23 @@
     <button class="btn">
       <img src="/img/library.png">
       <span>Library</span></button>
-  </nav>
+   </nav>
+   <!--Menu dos três pontos mobile-->
+   <nav class="toggle-more">
+             <ul>
+              <li><a href="#"><i class="fa-solid fa-share"></i>
+                Share</a></li>
+              <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>
+                About channel</a></li>
+              <li><a href="#"><i class="fa-solid fa-lock"></i>
+                Hide user from my channel</a></li>
+              <li><a href="#"><i class="fa-regular fa-flag"></i>
+                Report user</a></li>
+              <li><a href="#"><i class="fa-solid fa-question">
+              </i>Help & feedback</a></li>
+            </ul>
+       </nav>
+       <!--Barra de navegação desktop menu lateral com script-->
   <header class="title-bar">
     <button id="button-change" class="desktop menu">
       <i class="fa-solid fa-bars"></i>
@@ -44,7 +62,7 @@
          <li class="subs-title">Subscriptions</li>
          <li class="subscribed-channel"><a><img src="/img/fotoDePerfil.png">Cozinha Fácil</a></li>
         </ul>
-          <ul>
+        <ul>
         <li class="subs-title">You</li>
 
         <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i>
@@ -114,15 +132,18 @@
                &copy;2026
             </footer>
     </nav>
-    <div class="background"></div>
+    <!--Div para area de click para fechar os menus de script com toque na tela-->
+    <div class="clickArea"></div>
+    <!--Barra padrão do youtube desktop-->
     <h1 class="desktop youtube"><img src="/img/youtube.png" alt="" aria-hidden="true">
       <span>Youtube</span></h1>
    
-      <h2 class="mobile-title mobile-aria"><span>Cozinha Fácil</span></h2>
-        <button class="live-mobile mobile-aria" aria-label="transmition">
+      <h2 class="mobile-title"><span>Cozinha Fácil</span></h2>
+      <div class="mobile-aria">
+        <button class="live-mobile" aria-label="transmition">
           <img class="icon mobile-aria" src="/img/multimedia.png">
         </button>
-        <form class="search-aria mobile-aria">
+        <form class="search-aria">
           <label  for="search" class="visually-hidden">
               </label>
            <div class="input-wrapper">
@@ -133,31 +154,15 @@
               class="search-input"
               placeholder=""
               >
-            <button type="button" class="search-btn mobile-aria" aria-label="buscar">
-              <img  class="icon" src="/img/loupe.png" width="18" height="18">
+            <button type="button" class="search-btn" aria-label="buscar">
+              <img  class="icon" src="/img/loupe.png">
             </button>
-            
-            <button class="more-mobile mobile-aria" aria-label="more options" alt="">
+            </div>
+        </form>
+            <button class="more-mobile" aria-label="more options" alt="">
               <img class="icon" src="/img/dots.png">
             </button>
-            <nav class="toggle-more active">
-            <div class="box-more active"></div>
-            <ul>
-              <li><a href="#"><i class="fa-solid fa-share"></i>
-                Share</a></li>
-              <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>
-                About channel</a></li>
-              <li><a href="#"><i class="fa-solid fa-lock"></i>
-                Hide user from my channel</a></li>
-              <li><a href="#"><i class="fa-regular fa-flag"></i>
-                Report user</a></li>
-              <li><a href="#"><i class="fa-solid fa-question">
-              </i>Help & feedback</a></li>
-            </ul>
-          </nav>
-          </div>
-        </form>
-
+        </div>
     <button class="microphone">
       <img class="icon desktop" src="/img/microphone.png">
     </button>
@@ -173,14 +178,14 @@
     <button class="profile">
       <img  class="icon desktop"  src="/img/user.png">
     </button>
-
   </header>
-     <section class="banner-section"> 
+
+  <section class="banner-section"> 
     <figure>
     <img src="/img/capa2.png" alt="Imagem do canal cozinha facil">
    </figure>
     </section>
-  <main class="video-container">
+   <main class="video-container">
     <section class="name-channel">
       <div class="space-image-title">
       <figure>
@@ -208,7 +213,7 @@
       <button><span>ABOUT</span></button>
 
       <img class="icon" src="/img/loupe.png">
-    </section>
+     </section>
 
      <section class="home-bar-mobile">
       <button><span>HOME</span></button>
@@ -219,11 +224,11 @@
     </section>
 
     <article class="featured-video">
-      <a href="#" class="video-thumb">
+      <a href="https://www.youtube.com/watch?v=nG0GnTu7vFs" class="video-card" target="_blank">
       <img class="thumb" src="/img/featured.png" alt="imagem do video da receita de lasanha">
+      <h3>Receita de lasanha de frango</h3>
       </a>
       <div class="video-info">
-        <h3>Receita de lasanha de frango</h3>
         <p class="views-featured">12,265,456 views . 1 week ago</p>
         <p class="text-featured">
           Confira agora o passo a passo dessa receita fácil e rápida - <br>

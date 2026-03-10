@@ -9,21 +9,21 @@ btn.addEventListener("click", () => {
 const buttonToggle = document.querySelector(".menu");
 const menuToggle = document.querySelector(".menu-toggle");
 const content = document.querySelector(".video-container");
-const background = document.querySelector(".background");
+const clickArea = document.querySelector(".clickArea");
 
 buttonToggle.addEventListener("click", () => {
  menuToggle.classList.toggle("active")
  buttonToggle.classList.toggle("active")
  content.classList.toggle("active")
- background.classList.toggle("active")
+ clickArea.classList.toggle("active")
  document.body.style.backgroundColor = menuToggle.classList.contains("active") ? "rgb(8, 8, 8)" :  "rgb(8, 8, 8)"
 });
 
-  background.addEventListener("click", () => {
+  clickArea.addEventListener("click", () => {
   menuToggle.classList.remove("active")
   buttonToggle.classList.remove("active")
   content.classList.remove("active")
-  background.classList.remove("active")
+  clickArea.classList.remove("active")
    document.body.style.backgroundColor =  "rgb(8, 8, 8)" 
 });
 
@@ -31,11 +31,12 @@ const moreButtom = document.querySelector(".more-mobile");
 const menuCard = document.querySelector(".toggle-more");
 
  moreButtom.addEventListener("click", () => {
+ clickArea.classList.toggle("active")
  moreButtom.classList.toggle("active")
  menuCard.classList.toggle("active")
  
 });
-moreButtom.addEventListener("click", () => {
+ clickArea.addEventListener("click", () => {
  moreButtom.classList.remove("active")
  menuCard.classList.remove("active")
 });

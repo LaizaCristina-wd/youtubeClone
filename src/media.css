@@ -1,0 +1,7 @@
+@media(max-width:768px){
+  .banner-section{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+}
