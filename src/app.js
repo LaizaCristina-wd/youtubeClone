@@ -42,6 +42,7 @@ const menuCard = document.querySelector(".toggle-more");
 });
 
 
+//Fiz somente como eu entendi, usei só o class que esta no html e css.
 
   const subscribeButton = document.querySelector(".subscribe-button");
   let = isSubscribed = JSON.parse(localStorage.getItem("isSubscribed")) || false; 
@@ -62,7 +63,6 @@ const menuCard = document.querySelector(".toggle-more");
     isSubscribed = false;
   }
   localStorage.setItem("isSubscribed", JSON.stringify(isSubscribed));
-
   });
  
    

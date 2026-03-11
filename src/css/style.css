@@ -225,6 +225,7 @@ margin-left: 40px;
   background:var(--primary-color,#000);
   border:none;
 }
+/*more-mobile é o menu de pontos*/
 .more-mobile{
   display:none;
   border:none;
@@ -254,6 +255,7 @@ background-color:var(--second-color);
  padding:8px;
   border-radius: 50%;
 }
+/*estilização dos botões do nav left-back*/ 
 .btn-plus{
   display:none;
 }
@@ -291,6 +293,8 @@ background-color:var(--second-color);
 .btn:hover{
   background-color:var(--second-color);
 }
+/*Organização das descrições do video destaque*/
+
 .name-channel{
   display: flex;
   align-items: center;
@@ -319,6 +323,7 @@ background-color:var(--second-color);
   align-items: center;
   gap: 10px
 }
+/*perfil do canal descrições e botão subscribe*/
 .foto-perfil{
   border-radius: 50%;
   width: 80px;
@@ -346,6 +351,7 @@ background-color:var(--second-color);
   background-color: #ff0000;
   color: var(--primary-color,#000)
 }
+/*só posicionamento da barra de navegação central do youtube*/
 .home-bar-mobile{
   display: none;
 }
@@ -363,7 +369,6 @@ background-color:var(--second-color);
   background: none;
   border:none;
 }
-
 .thumb{
   border-radius: 8px;
   width: 20em;
@@ -374,6 +379,7 @@ h3{
 h4{
   font-size: 19px;
 }
+/*design do video destaque*/
 .featured-video{
   display: flex;
   align-items: center;
@@ -385,12 +391,12 @@ h4{
 }
 .featured-video:hover{
   background: var(--second-color);
-
 }
 .featured-video summary, a{
   padding:2px;
   cursor:pointer;
 }
+/*só background dos videos com borda*/
 .video-card{
   padding: 5px;
   border-radius: 10px;
@@ -420,6 +426,7 @@ h4{
   color:var(--info-color);
   border:none;
 }
+/*define a posição dos videos e adiciona o wrap para melhor reponsividade*/
 .box-videos{
   display: flex;
   flex-direction: row;
@@ -433,7 +440,6 @@ h4{
 .views{
   color: var(--info-color);
 }
-
 /*menu 3 pontos mobile*/
 .toggle-more{
   position: fixed;
@@ -452,7 +458,6 @@ bottom: 0;
   list-style-type:none;
   padding: 0;
   margin-top: 10px;
-  
 }
 .toggle-more ul li{
 padding:5px;

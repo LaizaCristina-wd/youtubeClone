@@ -1,11 +1,4 @@
 @media(max-width:768px){
-  .banner-section{
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-  }
-}
-@media(max-width:768px){
   .left-back {
     display: flex;
     width: 100%;
@@ -37,6 +30,13 @@
   }
   footer{
     display:none;
+  }
+}
+@media(max-width:768px){
+  .banner-section{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
   }
 }
 @media(max-width:768px){
@@ -94,7 +94,6 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-
  }
 }
 @media(max-width:768px){
@@ -106,7 +105,6 @@
     align-items: center;
     padding-top: 0;
     gap:10px;
-    
   }
   .space-image-title{
     display: flex;
