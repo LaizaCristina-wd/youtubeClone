@@ -41,50 +41,32 @@ const menuCard = document.querySelector(".toggle-more");
  menuCard.classList.remove("active")
 });
 
-let isSubscribed = false;
+
 
   const subscribeButton = document.querySelector(".subscribe-button");
-  subscribeButton.addEventListener("click",() =>{
-  subscribeButton.classList.toggle("subscribed");
-  if(subscribeButton.classList.contains("subscribed")){
-    subscribeButton.textContent = "Subscribed"
-  }else{
-    subscribeButton.textContent= "Subscribe";
-  }
-})
-
-  function subscribe(){
-  if(isSubscribed.cliked === true){
-   isSubscribed = false;
-   }else{
-   isSubscribed.cliked = true;
-  }
-  }
-
-
-//}
-  subscribeButton();
-  localStorage.setItem("isSubscribed", JSON.stringify(isSubscribed));
-  //const subscribeButton = document.querySelector(".subscribe-btn");
-
-
-const data = JSON.parse(localStorage.getItem("isSubscribed"));
-
-if(data && data.subscribed){
+  let = isSubscribed = JSON.parse(localStorage.getItem("isSubscribed")) || false; 
+  if(isSubscribed){
   subscribeButton.classList.add("subscribed");
   subscribeButton.textContent = "Subscribed";
 }
 
-btn.addEventListener("click", () => {
+  subscribeButton.addEventListener("click", () => {
 
-  const subscribed = btn.classList.toggle("subscribed");
+  subscribeButton.classList.toggle("subscribed");
 
-  btn.textContent = subscribed ? "Subscribed" : "Subscribe";
+  if(subscribeButton.classList.contains("subscribed")){
+    subscribeButton.textContent = "Subscribed";
+    isSubscribed = true;
+  }else{
+    subscribeButton.textContent = "Subscribe";
+    isSubscribed = false;
+  }
+  localStorage.setItem("isSubscribed", JSON.stringify(isSubscribed));
 
-  const channelData = {
-    subscribed: subscribed
-  };
-
-  localStorage.setItem("isSubscribed", JSON.stringify(channelData));
-  
-});
+  });
+ 
+   
+    
+   
+   //precisa do stringify para ler objetos e arrays, para salvar.
+   //precisa ser em parse para transformar de volta "true" em true
