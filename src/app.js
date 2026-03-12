@@ -45,7 +45,7 @@ const menuCard = document.querySelector(".toggle-more");
 //class que esta no html e css.
 
   const subscribeButton = document.querySelector(".subscribe-button");
-  let = isSubscribed = JSON.parse(localStorage.getItem("isSubscribed")) || false; 
+  let isSubscribed = JSON.parse(localStorage.getItem("isSubscribed")) || false; 
   if(isSubscribed){
   subscribeButton.classList.add("subscribed");
   subscribeButton.textContent = "Subscribed";
